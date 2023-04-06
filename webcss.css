@@ -606,7 +606,8 @@ a {
 	width: 150px;
 	height: 85px;
 	background-image: url('../img/logo.png');
-	margin: 8px 0 8px 200px;
+	margin: 8px 0 8px 150px;
+
 }
 
 .header-nav {
