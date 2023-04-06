@@ -103,8 +103,8 @@ animation: move 25s infinite linear;
   } 
 }
 .info_cirk{
-  top: 200px;
-  left: 200px;
+  top: 220px;
+  left: 740px;
 }
 .info_stall{
   top: 500px;
@@ -191,8 +191,7 @@ h2{
   padding: 50px 0px;
 }
 .Info_park{
-    background-image: url("/img/Group 38.png");
-    height: 700px;  
+    background-image: url("/img/Group 38.png"); 
 }
 .qeeqw{
     display: flex;
