@@ -5,7 +5,6 @@ const slides = sliderBox.querySelectorAll('.slider-item');
 const btnPrev = sliderBox.querySelector('.slider-btn--prev');
 const btnNext = sliderBox.querySelector('.slider-btn--next');
 
-
 let counterf = 0;
 
 if (btnNext) {
