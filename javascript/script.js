@@ -59,132 +59,132 @@ if (btnPrev) {
   });
 }
 
-var touch = Modernizr.touch;
-$('.img-holder').imageScroll({
-  imageAttribute: (touch === true) ? 'image-mobile' : 'image',
-  touch: touch
-});
+// var touch = Modernizr.touch;
+// $('.img-holder').imageScroll({
+//   imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+//   touch: touch
+// });
 
 
-const moreButton = document.querySelector('.courses-more')
-const list = document.querySelector('.courses-list')
-const showList = 'courses-list-show'
-const hideButton = 'courses-more-hide'
+// const moreButton = document.querySelector('.courses-more')
+// const list = document.querySelector('.courses-list')
+// const showList = 'courses-list-show'
+// const hideButton = 'courses-more-hide'
 
-moreButton.addEventListener('click', function(){
-	list.classList.add(showList)
-	moreButton.classList.add(hideButton)
-})
+// moreButton.addEventListener('click', function(){
+// 	list.classList.add(showList)
+// 	moreButton.classList.add(hideButton)
+// })
 
-const sliderList = document.querySelectorAll('.reviews-list')
-const sliderPage = document.querySelectorAll('.reviews-slider-page')
+// const sliderList = document.querySelectorAll('.reviews-list')
+// const sliderPage = document.querySelectorAll('.reviews-slider-page')
 
-const buttonBack = document.querySelector('.reviews-slider-left-button')
-const buttonNext = document.querySelector('.reviews-slider-right-button')
+// const buttonBack = document.querySelector('.reviews-slider-left-button')
+// const buttonNext = document.querySelector('.reviews-slider-right-button')
 
-const hideList = 'reviews-list-hide'
-const activePage = 'reviews-slider-page-active'
+// const hideList = 'reviews-list-hide'
+// const activePage = 'reviews-slider-page-active'
 
-let counter = 0
+// let counter = 0
 
-buttonNext.addEventListener('click', function(){
-	if (counter == 0){
-		sliderList[counter].classList.add(hideList)
-		sliderPage[counter].classList.remove(activePage)
-		counter++
-		sliderList[counter].classList.remove(hideList)
-		sliderPage[counter].classList.add(activePage)
-	}
+// buttonNext.addEventListener('click', function(){
+// 	if (counter == 0){
+// 		sliderList[counter].classList.add(hideList)
+// 		sliderPage[counter].classList.remove(activePage)
+// 		counter++
+// 		sliderList[counter].classList.remove(hideList)
+// 		sliderPage[counter].classList.add(activePage)
+// 	}
 
-	else if (counter == 1){
-		sliderList[counter].classList.add(hideList)
-		sliderPage[counter].classList.remove(activePage)
-		counter--
-		sliderList[counter].classList.remove(hideList)
-		sliderPage[counter].classList.add(activePage)
-	}
-})
+// 	else if (counter == 1){
+// 		sliderList[counter].classList.add(hideList)
+// 		sliderPage[counter].classList.remove(activePage)
+// 		counter--
+// 		sliderList[counter].classList.remove(hideList)
+// 		sliderPage[counter].classList.add(activePage)
+// 	}
+// })
 
-buttonBack.addEventListener('click', function(){
-	if (counter == 0){
-		sliderList[counter].classList.add(hideList)
-		sliderPage[counter].classList.remove(activePage)
-		counter++
-		sliderList[counter].classList.remove(hideList)
-		sliderPage[counter].classList.add(activePage)
-	}
+// buttonBack.addEventListener('click', function(){
+// 	if (counter == 0){
+// 		sliderList[counter].classList.add(hideList)
+// 		sliderPage[counter].classList.remove(activePage)
+// 		counter++
+// 		sliderList[counter].classList.remove(hideList)
+// 		sliderPage[counter].classList.add(activePage)
+// 	}
 
-	else if (counter == 1){
-		sliderList[counter].classList.add(hideList)
-		sliderPage[counter].classList.remove(activePage)
-		counter--
-		sliderList[counter].classList.remove(hideList)
-		sliderPage[counter].classList.add(activePage)
-	}
-})
+// 	else if (counter == 1){
+// 		sliderList[counter].classList.add(hideList)
+// 		sliderPage[counter].classList.remove(activePage)
+// 		counter--
+// 		sliderList[counter].classList.remove(hideList)
+// 		sliderPage[counter].classList.add(activePage)
+// 	}
+// })
 
-const btnUp = {
-  el: document.querySelector('.btn-up'),
-  show() {
-    // удалим у кнопки класс btn-up_hide
-    this.el.classList.remove('btn-up_hide');
-  },
-  hide() {
-    // добавим к кнопке класс btn-up_hide
-    this.el.classList.add('btn-up_hide');
-  },
-  addEventListener() {
-    // при прокрутке содержимого страницы
-    window.addEventListener('scroll', () => {
-      // определяем величину прокрутки
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
-      scrollY > 900 ? this.show() : this.hide();
-    });
-    // при нажатии на кнопку .btn-up
-    document.querySelector('.btn-up').onclick = () => {
-      // переместим в начало страницы
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-    }
-  }
-}
+// const btnUp = {
+//   el: document.querySelector('.btn-up'),
+//   show() {
+//     // удалим у кнопки класс btn-up_hide
+//     this.el.classList.remove('btn-up_hide');
+//   },
+//   hide() {
+//     // добавим к кнопке класс btn-up_hide
+//     this.el.classList.add('btn-up_hide');
+//   },
+//   addEventListener() {
+//     // при прокрутке содержимого страницы
+//     window.addEventListener('scroll', () => {
+//       // определяем величину прокрутки
+//       const scrollY = window.scrollY || document.documentElement.scrollTop;
+//       // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+//       scrollY > 900 ? this.show() : this.hide();
+//     });
+//     // при нажатии на кнопку .btn-up
+//     document.querySelector('.btn-up').onclick = () => {
+//       // переместим в начало страницы
+//       window.scrollTo({
+//         top: 0,
+//         left: 0,
+//         behavior: 'smooth'
+//       });
+//     }
+//   }
+// }
 
-btnUp.addEventListener();
+// btnUp.addEventListener();
 
 
-const windowBlock = document.querySelector('.window-block')
-const windowScreen = document.querySelector('.window')
-const showButton = document.querySelectorAll('.courses-list-block-more')
+// const windowBlock = document.querySelector('.window-block')
+// const windowScreen = document.querySelector('.window')
+// const showButton = document.querySelectorAll('.courses-list-block-more')
 
-const submitButton = document.querySelector('.window-block-button')
-const errorBlock = document.querySelector('.error')
+// const submitButton = document.querySelector('.window-block-button')
+// const errorBlock = document.querySelector('.error')
 
-const showWindow = 'window-show'
-const showBlock = 'window-block-anim'
-const errorHide = 'error-hiden'
+// const showWindow = 'window-show'
+// const showBlock = 'window-block-anim'
+// const errorHide = 'error-hiden'
 
-for (let i = 0; i < 9; i++){
-	showButton[i].addEventListener('click', function(){
-		windowScreen.classList.add(showWindow)
-		windowBlock.classList.add(showBlock)
-	})
-}
+// for (let i = 0; i < 9; i++){
+// 	showButton[i].addEventListener('click', function(){
+// 		windowScreen.classList.add(showWindow)
+// 		windowBlock.classList.add(showBlock)
+// 	})
+// }
 
-submitButton.addEventListener('click', function(){
-	windowScreen.classList.remove(showWindow)
-	windowBlock.classList.remove(showBlock)
-	errorBlock.classList.remove(errorHide);
-	setTimeout(
-	  	() => {
-	    	errorBlock.classList.add(errorHide);
-	  	},
-  		4 * 1000
-	);
-})
+// submitButton.addEventListener('click', function(){
+// 	windowScreen.classList.remove(showWindow)
+// 	windowBlock.classList.remove(showBlock)
+// 	errorBlock.classList.remove(errorHide);
+// 	setTimeout(
+// 	  	() => {
+// 	    	errorBlock.classList.add(errorHide);
+// 	  	},
+//   		4 * 1000
+// 	);
+// })
 
 
 const openButton = document.querySelectorAll('.answers-list-block-plus')
@@ -220,6 +220,7 @@ for (let i = 0; i < 5; i++) {
 let links = document.querySelectorAll(".link");
 let infos = document.querySelectorAll(".info");
 
+console.log(infos);
 for(let i = 0; i < links.length; i++){
     links[i].onclick = function(evt){
         evt.preventDefault();
