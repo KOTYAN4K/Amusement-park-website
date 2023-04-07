@@ -35,6 +35,11 @@
 .headline h1 {
   display: flex;
   justify-content: center;
+  color: #FFD26A;
+  font-family: 'Comfortaa';
+  font-weight: 700 !important;
+  font-size: 30px;
+  text-shadow: 2px 2px 1px #333;
 
   padding-top: 35px;
   font-family: 'Comfortaa';
@@ -59,81 +64,27 @@
   background-size: 100%;
 }
 
-.header_animation{
-  animation: move1 50s infinite linear;
-  width: 100%;
-  height: 190vh;
-  margin: 0 auto;
-}
-
-@keyframes move1 {
-  0% {
-    transform: translate(0px, 0px);
-  }
-
-  20% {
-    transform: translate(10px, 8px);
-  }
-
-  40% {
-    transform: translate(-13px, 9px);
-  }
-
-  60% {
-    transform: translate(-11px, -7px);
-  }
-
-  80% {
-    transform: translate(15px, -9px);
-  }
-
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-
-.center_button button{
-  overflow: hidden;
-  position: relative;
-  border-radius: 50px;
-  width: 100px;
+.button {
+  transition: 0.4s;
+  border-radius: 50%;
   border: none;
-  outline: none;
-  height: 100px;
-  background-color: #8DE71B;
-  opacity: .7;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  transition: all .3s;
+  width: 70px;
+  height: 70px;
 }
 
-.center_button button:hover{
-  background-color: #96da3e;
-  border-radius: 50px;
+.button:hover {
+  background-color: rgb(251, 216, 216);
+  transform: scale(1.1) rotate(360deg);
+  transition: 0.4s;
+  border-radius: 50%;
   border: none;
-  opacity: 1;
-  transition: all .3s;
-}
-
-.center_button button:hover svg{
-  top: 60%;
-  transition: all .3s;
-}
-.center_button button svg{
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  transition: all .3s;
 }
 
 .center_button {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin-top: calc(100vh - 400px);
+  height: 630px;
 }
 
 .map {
@@ -759,7 +710,7 @@ header {
 }
 
 footer {
-  background-color: #4dec3b;
+  background-color: #90dd99;
 }
 
 a {
@@ -893,7 +844,7 @@ a {
   position: absolute;
   width: 400px;
   height: 650px;
-  background-color: #9090DD;
+  background-color: #90dd99;
 }
 
 .contacts-block-logo {

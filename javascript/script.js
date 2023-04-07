@@ -156,5 +156,5 @@ function parallax(){
   deathstar.style.top = ( 1000 - window.pageYOffset) + 'px';
   //deathstar.style.left = (-1700 + window.pageYOffset) + 'px';
 }
-
+  
 window.addEventListener("scroll", parallax, false);
