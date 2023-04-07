@@ -205,6 +205,7 @@ animation: move 25s infinite linear;
 .container{
   width: 1170px;
   margin: 0 auto;
+  
 }
 h2{
   text-align: center;
@@ -213,6 +214,18 @@ h2{
 .Info_park{
     background-image: url("/img/Group 38.png"); 
 }
+a.knopka {
+  color: #fff; 
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(42, 184, 68); 
+  padding: .7em 1.5em; 
+  outline: none; 
+  border-radius: 15px;
+  align-items: center;
+} 
+a.knopka:hover { background: rgb(24, 220, 60); } 
+a.knopka:active { background: rgb(0, 255, 47); } 
 .qeeqw{
     display: flex;
     justify-content: space-between;
@@ -615,7 +628,7 @@ header {
 }
 
 footer {
-	background-color: #9090DD;
+	background-color: #4dec3b;
 }
 
 a {
@@ -655,7 +668,7 @@ a {
 }
 
 .baner {
-	background-color: #9090DD;
+	background-color: #4dec3b;
 	display: flex;
 	width: 100%;
 }

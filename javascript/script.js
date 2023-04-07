@@ -72,7 +72,7 @@ if (btnPrev) {
 // const showList = 'courses-list-show'
 // const hideButton = 'courses-more-hide'
 
-// moreButton.addEventListener('click', function() {
+
 // 	list.classList.add(showList)
 // 	moreButton.classList.add(hideButton)
 // })
@@ -123,39 +123,6 @@ if (btnPrev) {
 // 		sliderPage[counter].classList.add(activePage)
 // 	}
 // })
-
-const btnUp = {
-  el: document.querySelector('.btn-up'),
-  show() {
-    // удалим у кнопки класс btn-up_hide
-    this.el.classList.remove('btn-up_hide');
-  },
-  hide() {
-    // добавим к кнопке класс btn-up_hide
-    this.el.classList.add('btn-up_hide');
-  },
-  addEventListener() {
-    // при прокрутке содержимого страницы
-    window.addEventListener('scroll', () => {
-      // определяем величину прокрутки
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
-      scrollY > 900 ? this.show() : this.hide();
-    });
-    // при нажатии на кнопку .btn-up
-    document.querySelector('.btn-up').onclick = () => {
-      // переместим в начало страницы
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-    }
-  }
-}
-
-btnUp.addEventListener();
-
 
 // const windowBlock = document.querySelector('.window-block')
 // const windowScreen = document.querySelector('.window')
@@ -221,6 +188,7 @@ for (let i = 0; i < 5; i++) {
 let links = document.querySelectorAll(".link");
 let infos = document.querySelectorAll(".info");
 
+console.log(infos);
 for(let i = 0; i < links.length; i++){
     links[i].onclick = function(evt){
         evt.preventDefault();
@@ -234,3 +202,20 @@ for(let info of infos){
         }
     });
 }
+
+
+
+//паралакс
+
+function parallax(){
+  var tie = document.getElementById('tie');
+  var deathstar = document.getElementById('deathstar');
+  
+
+  tie.style.top = (window.pageYOffset / 3) + 'px';
+  tie.style.left = -(window.pageYOffset / 2) + 'px';
+  deathstar.style.top = ( 1000 - window.pageYOffset) + 'px';
+  //deathstar.style.left = (-1700 + window.pageYOffset) + 'px';
+}
+
+window.addEventListener("scroll", parallax, false);
