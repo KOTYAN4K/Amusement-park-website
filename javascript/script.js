@@ -92,7 +92,8 @@ const btnUp = {
 
 btnUp.addEventListener();
 
-
+const blocksOpen = document.querySelector('.answers-list')
+const blockOpen = blocksOpen.querySelectorAll('.answers-list-block')
 const openButton = document.querySelectorAll('.answers-list-block-plus')
 const answer = document.querySelectorAll('.answers-list-block-answer')
 
@@ -105,7 +106,7 @@ let status = 0
 
 for (let i = 0; i < 5; i++) {
 	number = i
-	openButton[i].addEventListener('click', function(){
+	blockOpen[i].addEventListener('click', function(){
 		if (status == 0) {
 			answer[i].classList.add(textShow)
 			openButton[i].classList.remove(plus)
