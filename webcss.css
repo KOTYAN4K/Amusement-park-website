@@ -35,11 +35,6 @@
 .headline h1 {
   display: flex;
   justify-content: center;
-  color: #FFD26A;
-  font-family: 'Comfortaa';
-  font-weight: 700 !important;
-  font-size: 30px;
-  text-shadow: 2px 2px 1px #333;
 
   padding-top: 35px;
   font-family: 'Comfortaa';
@@ -64,27 +59,48 @@
   background-size: 100%;
 }
 
-.button {
-  transition: 0.4s;
-  border-radius: 50%;
+.center_button button{
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+  width: 100px;
   border: none;
-  width: 70px;
-  height: 70px;
+  outline: none;
+  height: 100px;
+  background-color: #8DE71B;
+  opacity: .7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: all .3s;
 }
 
-.button:hover {
-  background-color: rgb(251, 216, 216);
-  transform: scale(1.1) rotate(360deg);
-  transition: 0.4s;
-  border-radius: 50%;
+.center_button button:hover{
+  background-color: #96da3e;
+  border-radius: 50px;
   border: none;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.center_button button:hover svg{
+  top: 60%;
+  transition: all .3s;
+}
+.center_button button svg{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .3s;
 }
 
 .center_button {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 630px;
+  margin-top: calc(100vh - 400px);
 }
 
 .map {
