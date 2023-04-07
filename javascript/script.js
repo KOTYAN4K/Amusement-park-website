@@ -6,6 +6,7 @@ const btnPrev = sliderBox.querySelector('.slider-btn--prev');
 const btnNext = sliderBox.querySelector('.slider-btn--next');
 
 let counterf = 0;
+console.log(1);
 
 if (btnNext) {
   btnNext.addEventListener('click', function () {
@@ -71,7 +72,7 @@ if (btnPrev) {
 // const showList = 'courses-list-show'
 // const hideButton = 'courses-more-hide'
 
-// moreButton.addEventListener('click', function(){
+
 // 	list.classList.add(showList)
 // 	moreButton.classList.add(hideButton)
 // })
@@ -122,39 +123,6 @@ if (btnPrev) {
 // 		sliderPage[counter].classList.add(activePage)
 // 	}
 // })
-
- const btnUp = {
-   el: document.querySelector('.btn-up'),
-   show() {
-     // удалим у кнопки класс btn-up_hide
-     this.el.classList.remove('btn-up_hide');
-   },
-   hide() {
-     // добавим к кнопке класс btn-up_hide
-     this.el.classList.add('btn-up_hide');
-   },
-   addEventListener() {
-    // при прокрутке содержимого страницы
-    window.addEventListener('scroll', () => {
-             // определяем величину прокрутки
-       const scrollY = window.scrollY || document.documentElement.scrollTop;
-       // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
-       scrollY > 900 ? this.show() : this.hide();
-     });
-     // при нажатии на кнопку .btn-up
-     document.querySelector('.btn-up').onclick = () => {
-       // переместим в начало страницы
-       window.scrollTo({
-         top: 0,
-         left: 0,
-         behavior: 'smooth'
-       });
-     }
-   }
- }
-
- btnUp.addEventListener();
-
 
 // const windowBlock = document.querySelector('.window-block')
 // const windowScreen = document.querySelector('.window')
