@@ -5,80 +5,93 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="webcss.css">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="headline">
-            <h1>Парк аттракционов</h1>
-        </div>
-        <div class="center_button" data-paralax-scrollspeed="1.5">
-            <form>
-                <button class="button">
-                    <svg width="53" height="46" viewBox="0 0 53 46" fill="none">
-                        <path d="M26.5 46L0.0862238 0.249999L52.9138 0.250003L26.5 46Z" fill="#E16F6F" fill-opacity="0.5"/>
-                    </svg>
-                </button>
-            </form>
-        </div>
-    </header>
-    <div class="container map" id="deathstar">
-        <a class="link cirk" href=""><img clsss="cirk" src="img/cirk.svg"></a>
-        <div class="info info_cirk" hidden>
-            <p>jfnvkjhhj</p>
-        </div>
-        <a class="link stall" href="stall.html"><img clsss="stall" src="img/stall.svg"></a>
-        <div class="info info_stall" hidden>
-            <p>jfnvkjhhj</p>
-        </div>
-        <a class="link train" href="train.html"><img clsss="train" src="img/train.svg"></a>
-        <div class="info info_train" hidden>
-            <p>jfnvkjhhj</p>
-        </div>
-        <a class="link carousel" href="carousel.html"><img clsss="carousel" src="img/carousel.svg"></a>
-        <div class="info info_carousel" hidden>
-            <p>jfnvkjhhj</p>
-        </div>
-        <a class="link ferris_wheel" href="ferris_wheel.html"><img clsss="ferris_wheel" src="img/ferris_wheel.svg"></a>
-        <div class="info info_ferris_wheel" hidden>
-            <p>jfnvkjhhj</p>
-        </div>
-        <a class="link flying_dutchman" href="flying_dutchman.html"><img clsss="flying_dutchman"
-                src="img/flying_dutchman.svg"></a>
-        <div class="info info_flying_dutchman" hidden>
-            <p>jfnvkjhhj</p>
-        </div>
-        <a class="link mountains" href="mountains.html"><img clsss="mountains" src="img/mountains.svg"></a>
-        <div class="info info_mountains" hidden>
-            <p>jfnvkjhhj</p>
-        </div>
-        <a class="link balloons" href="balloons.html"><img clsss="balloons" src="img/balloons.svg"></a>
-        <div class="info info_balloons" hidden>
-            <p>jfnvkjhhj</p>
-        </div>
-    </div>
+    <div class="wrapper">
+        <div class="content">
 
-    <section class="Info_park">
-        <div class="container">
-            <div class="Info_park_content">
-                <h2>О нашем парке</h2>
-                <div class="qeeqw">
-                    <img src="img/45745 3.png" alt="Парк оттракционов">
-                    <p>Добро пожаловать в Парк Развлечений!<br> <br>
-                        Наш парк - это идеальное место для семейного отдыха. <br>
-                        Мы предлагаем различные аттракционы для детей разных возрастов: от колесо обозрения и до летучего голландеца.<br> 
-                        Именно здесь вы сможете отдохнуть от тяжелых работ, расслабиться и провести время с детьми.</p>
-                       
+            <header class="header">
+                <div class="clouds" style="background-image: url(img/bottom-clouds.png);"></div>
+                <div class="headline">
+                    <h1>Парк аттракционов</h1>
+                </div>
+                <div class="center_button">
+
+                    <button class="button">
+                        <svg width="53" height="46" viewBox="0 0 53 46" fill="none">
+                            <path d="M26.5 46L0.0862238 0.249999L52.9138 0.250003L26.5 46Z" fill="#E16F6F"
+                                fill-opacity="0.5" />
+                        </svg>
+                    </button>
+
+                </div>
+                
+            </header>
+            
+            <div class="container map" id="deathstar">
+                <a class="link cirk" href=""><img clsss="cirk" src="img/cirk.svg"></a>
+                <div class="info info_cirk" hidden>
+                    <p>jfnvkjhhj</p>
+                </div>
+                <a class="link stall" href="stall.html"><img clsss="stall" src="img/stall.svg"></a>
+                <div class="info info_stall" hidden>
+                    <p>jfnvkjhhj</p>
+                </div>
+                <a class="link train" href="train.html"><img clsss="train" src="img/train.svg"></a>
+                <div class="info info_train" hidden>
+                    <p>jfnvkjhhj</p>
+                </div>
+                <a class="link carousel" href="carousel.html"><img clsss="carousel" src="img/carousel.svg"></a>
+                <div class="info info_carousel" hidden>
+                    <p>jfnvkjhhj</p>
+                </div>
+                <a class="link ferris_wheel" href="ferris_wheel.html"><img clsss="ferris_wheel"
+                        src="img/ferris_wheel.svg"></a>
+                <div class="info info_ferris_wheel" hidden>
+                    <p>jfnvkjhhj</p>
+                </div>
+                <a class="link flying_dutchman" href="flying_dutchman.html"><img clsss="flying_dutchman"
+                        src="img/flying_dutchman.svg"></a>
+                <div class="info info_flying_dutchman" hidden>
+                    <p>jfnvkjhhj</p>
+                </div>
+                <a class="link mountains" href="mountains.html"><img clsss="mountains" src="img/mountains.svg"></a>
+                <div class="info info_mountains" hidden>
+                    <p>jfnvkjhhj</p>
+                </div>
+                <a class="link balloons" href="balloons.html"><img clsss="balloons" src="img/balloons.svg"></a>
+                <div class="info info_balloons" hidden>
+                    <p>jfnvkjhhj</p>
                 </div>
             </div>
-        </div>
+
+            <section class="Info_park">
+                <div class="container">
+                    <div class="Info_park_content">
+                        <h2>О нашем парке</h2>
+                        <div class="qeeqw">
+                            <img src="img/45745 3.png" alt="Парк оттракционов">
+                            <p>Добро пожаловать в Парк Развлечений!<br> <br>
+                                Наш парк - это идеальное место для семейного отдыха. <br>
+                                Мы предлагаем различные аттракционы для детей разных возрастов: от колесо обозрения и до
+                                летучего голландеца.<br>
+                                Именно здесь вы сможете отдохнуть от тяжелых работ, расслабиться и провести время с
+                                детьми.</p>
+
+                        </div>
+                    </div>
+                </div>
 
         </div>
 
-        </div>
-        
-        <a href="#Преимущества и достоинства" class="knopka">Узнать больше...</a> 
-     
+    </div>
+
+    <a href="#Преимущества и достоинства" class="knopka">Узнать больше...</a>
+
     </section>
     <div class="wrapper">
         <header></header>
@@ -119,7 +132,7 @@
                                 <div class="paragraph-slider">
                                     <p>В ближайших днях на нашем Парке Развлечений будет новое мероприятие:
                                         актер цирка и тигр
-                                      
+
                                     </p>
                                 </div>
                             </div>
@@ -175,35 +188,7 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-    </section>  
-=======
     </section>
-    <section>
-        <div class="container">
-            <ul>
-                <li class="attraction_item">
-                    <div class="attraction_name">
-                        <p>Колесо обозрения</p>
-                        <button class="read_more_btn">&darr;</button>
-                    </div>
-                    <div class="attraction_about hidden">
-                        <img src="img\koleso.jpg" alt="">
-                        <div>
-                            <p>Колесо обозрения – это высокая конструкция в виде большого колеса, которая служит для
-                                просмотра панорамных видов на город, море или природу. Колесо обозрения состоит из
-                                ободков, спиц и капсул, которые перемещаются по ободу с помощью тросов и подъемников.
-                                Общая высота колеса может достигать до 150 метров. </p>
-                            <button>Купить билет</button>
-                        </div>
-
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
->>>>>>> d047f1549fe4ab948f4cd764787754ec1e1226d3
     <section>
         <div>
             <H2>Отзывы</H2>
@@ -359,8 +344,8 @@
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-column">
-              <p class="policy"><a href="#">Политика конфиденциальности</a></p>
-              <p class="copyright">Парк аттракционов<br> ©2023 Все права защищены</p>
+                <p class="policy"><a href="#">Политика конфиденциальности</a></p>
+                <p class="copyright">Парк аттракционов<br> ©2023 Все права защищены</p>
             </div>
             <ul class="footer-navigation-topics">
                 <li class="footer-navigation-topic">
@@ -405,12 +390,15 @@
                 </li>
     </footer>
 
+    </div>
+    </div>
+
 </body>
 
 </html>
 
 
-<script src="javascript/script.js"></script>
+<script src="javascript/script.js" defer></script>
 </body>
 
 </html>
