@@ -291,6 +291,8 @@ h2 {
 }
 
 a.knopka {
+  display: block;
+  width: fit-content;
   color: #fff;
   text-decoration: none;
   user-select: none;
@@ -299,6 +301,9 @@ a.knopka {
   outline: none;
   border-radius: 15px;
   align-items: center;
+  margin: 30px auto;
+
+  transition: all .3s;
 }
 
 a.knopka:hover {
@@ -318,6 +323,7 @@ a.knopka:active {
 .qeeqw p {
   width: 500px;
   font-size: 20px;
+  text-align: justify;
 }
 
 .Advantages_content {
@@ -420,6 +426,15 @@ a.knopka:active {
 
 .footer-column {
   width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-column .headline {
+  font-size: 30px;
+  line-height: 40px;
+  padding-top: 40px;
 }
 
 .main-footer .logo {
@@ -480,7 +495,7 @@ a.knopka:active {
 
 .policy {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
   font-size: 18px;
 }
 
@@ -608,7 +623,7 @@ button {
 
 .slider-item .slider-img {
   position: relative;
-  background-color: #fff;
+  background-color: var(--color-background-light-blue);
   border-radius: 5px;
   display: block;
   height: 100%;
@@ -621,7 +636,7 @@ button {
   display: block;
   height: 500px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--color-background-blue);
   border-radius: 5px;
   transition: all .4s;
 }
@@ -755,9 +770,9 @@ a {
 }
 
 .answers-list-block {
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
-  margin: 50px 0 0 0;
-  display: flex;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+	margin: 50px 0 0 0;
+	display: flex;
 }
 
 .answers-list-block-question {
@@ -767,13 +782,22 @@ a {
 }
 
 .answers-list-block-answer {
-  background-color: transparent;
-  display: none;
+	background-color: transparent;
+	display: none;
 }
 
 .answers-list-block-answer-show {
-  display: block;
+	display: block;
 }
+
+/* @keyframes slideIn {
+  0%{
+    transform: scale(1, 0);
+  }
+  100%{
+    transform: scale(1, 1);
+  }
+} */
 
 .answers-list-block-answer-text {
   font-size: 32px;
