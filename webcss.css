@@ -1068,7 +1068,7 @@ a {
 .answers-list-block {
 	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
 	margin: 50px 0 0 0;
-	display: flex;
+	display: flex;  
 }
 
 .answers-list-block-question {
@@ -1080,10 +1080,28 @@ a {
 .answers-list-block-answer {
 	background-color: transparent;
 	display: none;
+  /* transform-origin: center top;
+  transform: scale(1, 0);
+  will-change: transform;
+  transition: 0.5s; */
 }
 .answers-list-block-answer-show {
 	display: block;
+  /* transform-origin: center top; */
+  /* animation: slideIn .25s linear; */
+  /* will-change: transform;
+  transform: scale(1, 1);
+  transition: 0.5s; */
 }
+
+/* @keyframes slideIn {
+  0%{
+    transform: scale(1, 0);
+  }
+  100%{
+    transform: scale(1, 1);
+  }
+} */
 
 .answers-list-block-answer-text {
 	font-size: 32px;
