@@ -33,13 +33,13 @@
 }
 
 .headline h1 {
-  /*display: flex;
+  display: flex;
   justify-content: center;
   color: #FFD26A;
   font-family: 'Comfortaa';
   font-weight: 700 !important;
   font-size: 30px;
-  text-shadow: 2px 2px 1px #333;*/
+  text-shadow: 2px 2px 1px #333;
 
   padding-top: 35px;
   font-family: 'Comfortaa';
@@ -361,48 +361,11 @@ a.knopka:active {
   padding: 21px 59px;
 }
 
-.attraction_name {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 24px;
-}
-
-.attraction_name button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 32px;
-  cursor: pointer;
-}
-
-.attraction_about {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.attraction_about p,
-.attraction_about button {
-  font-size: 20px;
-  margin-left: 20px;
-}
-
 .hidden {
   display: none;
 }
-
-a#anchor {
-  display: block;
-  position: relative;
-  top: -100px;
-  /* здесь можно настроить смещение якоря */
-  visibility: hidden;
-}
-
 .reviews {
   width: 100%;
-  height: 1000px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -738,306 +701,6 @@ footer {
 a {
   text-decoration: none;
 }
-
-.header-logo {
-  width: 150px;
-  height: 85px;
-  background-image: url('../img/logo.png');
-  margin: 8px 0 8px 200px;
-
-}
-
-.header-nav {
-  display: flex;
-  list-style: none;
-  margin: 38px 200px 38px auto;
-  font-size: 20px;
-}
-
-.header-nav-button {
-  margin: 0 25px 0 25px;
-}
-
-.header-nav-button-link {
-  text-decoration: none;
-  color: white;
-  padding: 0 0 5px 0;
-
-  transition: 0.5s;
-}
-
-.header-nav-button-link:hover {
-  border-color: white;
-  transition: 0.5s;
-}
-
-.baner {
-  background-color: #4dec3b;
-  display: flex;
-  width: 100%;
-}
-
-.baner-left-content {
-  padding: 265px 0 265px 200px;
-}
-
-.baner-name {
-  color: white;
-  font-weight: 400;
-  font-size: 48px;
-}
-
-.baner-text {
-  color: white;
-  width: 720px;
-  font-size: 32px;
-  margin: 15px 0 0 0;
-}
-
-.baner-right-content {
-  padding: 90px 200px 90px 120px;
-}
-
-.baner-img {
-  width: 650px;
-  height: 650px;
-}
-
-.courses-name {
-  width: 229px;
-  margin: 0 auto;
-  font-size: 40px;
-  font-weight: 400;
-  padding: 100px 0 20px 0;
-
-}
-
-.courses-list {
-  margin: 100px 0 0 0;
-  height: 1144px;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.courses-list-show {
-  height: 1594px;
-  transition: 0.5s;
-}
-
-.courses-list-block {
-  width: 450px;
-  margin: 0 0 100px 0;
-}
-
-.courses-list-block-logo {
-  width: 450px;
-  height: 200px;
-  border: 1px solid silver;
-}
-
-.python {
-  background-image: url('../img/python.png');
-}
-
-.html {
-  background-image: url('../img/html.png');
-}
-
-.java {
-  background-image: url('../img/java.png');
-}
-
-.js {
-  background-image: url('../img/js.png');
-}
-
-.bootstrap {
-  background-image: url('../img/bootstrap.png');
-}
-
-.css {
-  background-image: url('../img/css.png');
-}
-
-.courses-list-block-hame {
-  font-size: 32px;
-  font-weight: 400;
-  margin: 30px 0 0 0;
-}
-
-.courses-list-block-text {
-  font-size: 20px;
-  margin: 20px 0 0 0;
-}
-
-.courses-list-block-duration {
-  font-size: 20px;
-  margin: 20px 0 0 0;
-}
-
-.courses-list-block-flex {
-  display: flex;
-  margin: 20px 0 0 0;
-}
-
-.courses-list-block-price {
-  font-size: 20px;
-}
-
-.courses-list-block-more {
-  font-size: 20px;
-  margin: 0 0 0 auto;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.courses-list-block-more:hover {
-  color: #9090DD;
-  transition: 0.5s;
-}
-
-.courses-button-wrapper {
-  text-align: center;
-}
-
-.courses-more {
-  padding: 15px 60px;
-  border: 1px solid #686868;
-  border-radius: 15px;
-  font-size: 24px;
-  background-color: transparent;
-  cursor: pointer;
-  transition: 0.5s;
-  margin: 0 0 100px 0;
-}
-
-.courses-more:hover {
-  border: 1px solid transparent;
-  background-color: #9090DD;
-  color: white;
-  transition: 0.5s;
-}
-
-.courses-more-hide {
-  color: transparent;
-  background-color: transparent;
-  border-color: transparent;
-  transition: 0.5s;
-}
-
-.blog {
-  margin: 100px 0 0 0;
-}
-
-.blog-name {
-  width: 90px;
-  margin: 0 auto;
-  font-size: 40px;
-  font-weight: 400;
-  padding: 100px 0 20px 0;
-
-}
-
-.blog-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 100px 0 0 0;
-  justify-content: space-between;
-}
-
-.blog-list-block {
-  width: 450px;
-  margin: 0 0 100px 0;
-}
-
-.blog-list-block-logo {
-  width: 450px;
-  height: 200px;
-  border: 1px solid silver;
-}
-
-.design {
-  background-image: url('../img/blog-design.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.structure {
-  background-image: url('../img/blog-structure.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.adaptive {
-  background-image: url('../img/blog-adaptive.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.language {
-  background-image: url('../img/blog-laguage.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.job {
-  background-image: url('../img/blog-job.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.framework {
-  background-image: url('../img/blog-framework.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.blog-list-block-theme {
-  background-color: #46FF42;
-  padding: 10px;
-  font-size: 20px;
-  display: inline-block;
-  border-radius: 10px;
-  margin: 30px 0 0 0;
-}
-
-.blog-list-block-name {
-  font-size: 32px;
-  font-weight: 400;
-  margin: 20px 0 0 0;
-}
-
-.blog-list-block-text {
-  font-size: 20px;
-  margin: 20px 0 0 0;
-}
-
-.about {
-  margin: 100px 0;
-}
-
-.about-name {
-  width: 103px;
-  margin: 0 auto;
-  font-size: 40px;
-  font-weight: 400;
-  padding: 100px 0 20px 0;
-
-}
-
-.about-block {
-  margin: 100px 0 0 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-block-text {
-  width: 720px;
-  font-size: 32px;
-}
-
 .reviews {
   margin: 100px 0;
 }
@@ -1078,84 +741,6 @@ a {
   border-radius: 50px;
   border: 1px solid silver;
 }
-
-.avatar-one {
-  background-image: url('../img/review-avatar-one.png');
-}
-
-.avatar-two {
-  background-image: url('../img/review-avatar-two.png');
-}
-
-.avatar-three {
-  background-image: url('../img/review-avatar-three.png');
-}
-
-.avatar-four {
-  background-image: url('../img/review-avatar-four.png');
-}
-
-.avatar-five {
-  background-image: url('../img/review-avatar-five.png');
-}
-
-.avatar-six {
-  background-image: url('../img/review-avatar-six.png');
-}
-
-
-.reviews-info-right {
-  margin: 20px 0 0 30px;
-}
-
-.reviews-info-name {
-  font-size: 24px;
-}
-
-.reviews-info-cours {
-  font-size: 20px;
-  margin: 5px 0 0 0;
-}
-
-.reviews-comment {
-  font-size: 20px;
-  font-style: italic;
-  margin: 30px 0 0 0;
-}
-
-.reviews-slider {
-  display: flex;
-  width: 100px;
-  margin: 100px auto 0 auto;
-  justify-content: space-between;
-}
-
-.reviews-slider-page {
-  width: 15px;
-  height: 15px;
-  margin: 2px 0 0 0;
-  border-radius: 50%;
-  background-color: #B5B5E0;
-}
-
-.reviews-slider-page-active {
-  background-color: #9090DD;
-}
-
-.reviews-slider-left-button {
-  width: 20px;
-  height: 20px;
-  background-image: url('../img/arrow-left.png');
-  cursor: pointer;
-}
-
-.reviews-slider-right-button {
-  width: 20px;
-  height: 20px;
-  background-image: url('../img/arrow-right.png');
-  cursor: pointer;
-}
-
 .answers-name {
   width: 368px;
   margin: 0 auto;
@@ -1294,32 +879,6 @@ a {
   display: none;
 }
 
-.footer-block {
-  width: 1370px;
-  padding: 25px 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-block-list {
-  color: white;
-  font-size: 14px;
-  width: 240px;
-  list-style: none;
-}
-
-.footer-block-list-li {
-  margin: 5px 0 5px 0;
-  color: white;
-}
-
-.footer-logo {
-  width: 150px;
-  height: 85px;
-  background-image: url('../img/logo.png');
-}
-
 .window {
   width: 100%;
   height: 100%;
@@ -1375,20 +934,4 @@ a {
 .window-content {
   width: 350px;
   margin: 0 auto;
-}
-
-.error {
-  padding: 10px 30px;
-  background-color: rgba(255, 0, 0, 0.75);
-  color: white;
-  width: 400px;
-  position: absolute;
-  position: fixed;
-  left: 79%;
-  transition: 0.5s;
-}
-
-.error-hiden {
-  display: none;
-  transition: 0.5s;
 }
