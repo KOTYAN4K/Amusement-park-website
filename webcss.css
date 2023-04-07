@@ -21,20 +21,9 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
-  box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Play', sans-serif;
   box-sizing: border-box;
-}
-
-:root {
-  --index: calc(1vw + 1vh);
-  --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
-
-  --color-white: #fff;
-  --color-background-blue: #46708F;
-  --color-background-light-blue: #5394C2;
 }
 
 .body {
@@ -61,13 +50,11 @@
 }
 
 .header {
-  top:0;
-  position: relative;
   width: 100%;
-  height: 200vh;
-  background-image: url(img/island.png);
+  height: 190vh;
+  background-image: url(img/head.svg);
   background-repeat: no-repeat;
-background-size: cover;
+  background-size: 100%;
 }
 
 .clouds{
@@ -80,6 +67,39 @@ background-size: cover;
   will-change: transform;
   transition: var(--transition);
 }
+.header_animation{
+  animation: move1 50s infinite linear;
+  width: 100%;
+  height: 190vh;
+  margin: 0 auto;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(10px, 8px);
+  }
+
+  40% {
+    transform: translate(-13px, 9px);
+  }
+
+  60% {
+    transform: translate(-11px, -7px);
+  }
+
+  80% {
+    transform: translate(15px, -9px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
 .center_button button{
   overflow: hidden;
   position: relative;
@@ -128,10 +148,7 @@ background-size: cover;
   background: url(img/map1.svg) 40% no-repeat;
   height: 800px;
   position: relative;
-  /* animation: move 25s infinite linear; */
-  transform: translate3d(0,calc(var(--scrollTop) / -25),0);
-  transition: var(--transition);
-  will-change: transform;
+  animation: move 25s infinite linear;
 }
 
 @keyframes move {
@@ -570,6 +587,12 @@ a.knopka:active {
 @font-face {
   font-family: 'Play';
   src: url(../fonts/Play-Regular.ttf);
+}
+
+:root {
+  --color-white: #fff;
+  --color-background-blue: #46708F;
+  --color-background-light-blue: #5394C2;
 }
 
 .hidden {
